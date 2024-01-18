@@ -141,7 +141,22 @@ const CartMenu = () => {
                   dispatch(setIsCartOpen({}));
                 }}
               >
-                
+                SIGN IN FIRST
+              </Button>
+            ) : (
+              <Button
+                sx={{
+                  backgroundColor: shades.primary[400],
+                  color: "white",
+                  borderRadius: 0,
+                  minWidth: "100%",
+                  padding: "20px 40px",
+                  m: "20px 0",
+                }}
+                onClick={() => {
+                  navigate("/checkout");
+                  dispatch(setIsCartOpen({}));
+                }}
               >
                 CHECKOUT
               </Button>
