@@ -158,6 +158,7 @@ const CartMenu = () => {
                   dispatch(setIsCartOpen({}));
                 }}
               >
+                CHECKOUT
               </Button>
             )}
           </Box>
