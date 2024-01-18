@@ -14,3 +14,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { UserButton, useUser } from "@clerk/clerk-react";
 
+const FlexBox = styled(Box)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
