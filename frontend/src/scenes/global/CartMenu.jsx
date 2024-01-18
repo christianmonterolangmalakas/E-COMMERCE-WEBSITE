@@ -130,7 +130,7 @@ const CartMenu = () => {
               <Button
                 sx={{
                   backgroundColor: shades.primary[400],
-                  color: "white",
+                  color: "blue",
                   borderRadius: 0,
                   minWidth: "100%",
                   padding: "20px 40px",
