@@ -6,13 +6,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import styled from "@emotion/styled";
 import { shades } from "../../theme";
 import {
-  decreaseCount,
-  increaseCount,
-  removeFromCart,
-  setIsCartOpen,
-} from "../../state";
-import { useNavigate } from "react-router-dom";
-import { UserButton, useUser } from "@clerk/clerk-react";
+ 
 
 const FlexBox = styled(Box)`
   display: flex;
