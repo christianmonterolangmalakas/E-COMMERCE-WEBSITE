@@ -23,3 +23,18 @@
           "longDescription": {
             "type": "richtext"
           },
+          "price": {
+            "type": "decimal",
+            "required": true
+          },
+          "image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
