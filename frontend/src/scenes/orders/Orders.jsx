@@ -48,43 +48,45 @@ const Orders = () => {
 
   return (
     <Box marginTop="80px" paddingX="180px">
-        <TableContainer>
-      {loading ? (
-        <div style={{ textAlign: "center", padding: "20px" }}>
-          <CircularProgress />
-          <Typography variant="body1">Loading orders...</Typography>
-        </div>
-      ) : error ? (
-        <Typography
-          variant="body1"
-          color="error"
-          style={{ textAlign: "center" }}
-        >
-          {error}
-        </Typography>
-      ) : (
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>EMAIL ADDRESS</TableCell>
-              <TableCell>ORDER ID</TableCell>
-              <TableCell>ORDER DATE</TableCell>
-              {/* Add more table headers based on your order model */}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {orders.map((order) => (
-              <TableRow key={order.id}>
-                <TableCell>{order.attributes.userName}</TableCell>
-                <TableCell>{order.attributes.stripeSessionId}</TableCell>
-                <TableCell>{new Date(order.attributes.createdAt).toLocaleString()}</TableCell>
-                {/* Add more table cells based on your order model */}
+      <TableContainer>
+        {loading ? (
+          <div style={{ textAlign: "center", padding: "20px" }}>
+            <CircularProgress />
+            <Typography variant="body1">Loading orders...</Typography>
+          </div>
+        ) : error ? (
+          <Typography
+            variant="body1"
+            color="error"
+            style={{ textAlign: "center" }}
+          >
+            {error}
+          </Typography>
+        ) : (
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>EMAIL ADDRESS</TableCell>
+                <TableCell>ORDER ID</TableCell>
+                <TableCell>ORDER DATE</TableCell>
+                {/* Add more table headers based on your order model */}
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      )}
-    </TableContainer>
+            </TableHead>
+            <TableBody>
+              {orders.map((order) => (
+                <TableRow key={order.id}>
+                  <TableCell>{order.attributes.userName}</TableCell>
+                  <TableCell>{order.attributes.stripeSessionId}</TableCell>
+                  <TableCell>
+                    {new Date(order.attributes.createdAt).toLocaleString()}
+                  </TableCell>
+                  {/* Add more table cells based on your order model */}
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        )}
+      </TableContainer>
     </Box>
   );
 };
