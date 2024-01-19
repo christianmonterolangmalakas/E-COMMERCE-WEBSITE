@@ -30,7 +30,6 @@ const CartMenu = () => {
   const totalPrice = cart.reduce((total, item) => {
     return total + item.count * item.attributes.price;
   }, 0);
-
   return (
     <Box
       display={isCartOpen ? "block" : "none"}
@@ -59,7 +58,6 @@ const CartMenu = () => {
               <CloseIcon />
             </IconButton>
           </FlexBox>
-
           {/* CART LIST */}
           <Box>
             {cart.map((item) => (
@@ -119,7 +117,6 @@ const CartMenu = () => {
               </Box>
             ))}
           </Box>
-
           {/* ACTIONS */}
           <Box m="20px 0">
             <FlexBox m="20px 0">

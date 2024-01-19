@@ -18,13 +18,13 @@ const BrowseCollection = () => {
         <Grid marginTop={"30px"} container spacing={3}>
           {collections.map((collection, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
-              <Paper elevation={3} style={{ padding: 20, textAlign: "center" }}>
+              <Paper elevation={3} style={{ padding: 50, textAlign: "center" }}>
                 <img
                   src={`/assets/${collection.image}`}
                   alt={collection.name}
                   style={{
-                    width: "200px",
-                    height: "200px",
+                    width: "100px",
+                    height: "100px",
                     marginBottom: 10,
                     objectFit: "cover",
                   }}

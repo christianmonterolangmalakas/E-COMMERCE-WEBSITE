@@ -42,14 +42,17 @@ function Footer() {
             Contact Us
           </Typography>
           <Typography color={"white"} mb="30px">
-            Address:
+            Address: Dem charles bule: Jeffree Lingal: Albert Retiza: Christian
+            Montero:
           </Typography>
           <Typography color={"white"} mb="30px" sx={{ wordWrap: "break-word" }}>
             Email: DemCharles@gmail.com, JeffreeLingal@gmail.com,
             ChristianMontero@gmail.com, AlbertRetiza@gmail.com
           </Typography>
           <Typography color={"white"} mb="30px">
-            Contact Number: 09123123
+            Contact Number: Dem charles bule: 09197424119, Jeffree Lingal:
+            09812397771, Albert Retiza: 09232487328, Christian Montero:
+            09812591996
           </Typography>
           <Typography color={"white"} mb="30px">
             Developed By: Dem Charles Bule, Jeffree Lingal, Christian Montero,
