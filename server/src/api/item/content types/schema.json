@@ -17,3 +17,9 @@
           "required": true,
           "unique": true
         },
+        "shortDescription": {
+            "type": "richtext"
+          },
+          "longDescription": {
+            "type": "richtext"
+          },
