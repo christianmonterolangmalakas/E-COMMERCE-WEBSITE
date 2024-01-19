@@ -34,7 +34,7 @@ const ItemDetails = () => {
     setItem(itemJson.data);
   }
 
-     async function getItems() {
+  async function getItems() {
     const items = await fetch(
       `http://localhost:2000/api/items?populate=image`,
       {
@@ -104,8 +104,8 @@ const ItemDetails = () => {
                 padding: "10px 40px",
               }}
               onClick={() => dispatch(addToCart({ item: { ...item, count } }))}
-                      ></Button>
-    ADD TO CART
+            >
+              ADD TO CART
             </Button>
           </Box>
           <Box>
@@ -152,4 +152,5 @@ const ItemDetails = () => {
     </Box>
   );
 };
-    export default ItemDetails;
+
+export default ItemDetails;
