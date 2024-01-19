@@ -5,9 +5,9 @@ export default function SignInPage() {
   return (
     <Box
       display="flex"
-      alignItems="flex"
-      justifyContent="flexbox"
-      marginTop="150px"
+      alignItems="center"
+      justifyContent="center"
+      marginTop="80px"
     >
       <SignIn />
     </Box>
