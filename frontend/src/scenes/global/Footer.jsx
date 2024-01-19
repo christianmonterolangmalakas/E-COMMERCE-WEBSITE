@@ -43,7 +43,7 @@ function Footer() {
           </Typography>
           <Typography color={"white"} mb="30px">
             Address: Dem charles bule: Jeffree Lingal: Albert Retiza: Christian
-            Montero:
+            Montero: blk 3 lot 5 rosa-rosario homes san pedro laguna
           </Typography>
           <Typography color={"white"} mb="30px" sx={{ wordWrap: "break-word" }}>
             Email: DemCharles@gmail.com, JeffreeLingal@gmail.com,
