@@ -38,3 +38,14 @@
               "audios"
             ]
           },
+          "category": {
+            "type": "enumeration",
+            "enum": [
+              "clothes",
+              "shoes",
+              "watches",
+              "electronics"
+            ]
+          }
+        }
+      }
