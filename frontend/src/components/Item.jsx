@@ -34,6 +34,14 @@ const Item = ({ item, width }) => {
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
+        <img
+          alt={item.name}
+          width="300px"
+          height="300px"
+          src={`http://localhost:2000${url}`}
+          onClick={() => navigate(`/item/${item.id}`)}
+          style={{ cursor: "pointer", objectFit: "cover" }}
+        />
         <Box
           display={isHovered ? "block" : "none"}
           position="absolute"
@@ -67,6 +75,16 @@ const Item = ({ item, width }) => {
             </Button>
           </Box>
         </Box>
+      </Box>
+
+      <Box mt="3px">
+        <Typography variant="subtitle2" color={neutral.dark}>
+          {category
+            .replace(/([A-Z])/g, " $1")
+            .replace(/^./, (str) => str.toUpperCase())}
+        </Typography>
+        <Typography>{name}</Typography>
+        <Typography fontWeight="bold">₱{price}</Typography>
       </Box>
     </Box>
   );
