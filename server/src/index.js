@@ -2,8 +2,8 @@
 
 module.exports = {
   
-  register(/*{ strapi }*/) {},
+  register() {},
 
   
-  bootstrap(/*{ strapi }*/) {},
+  bootstrap() {},
 };
