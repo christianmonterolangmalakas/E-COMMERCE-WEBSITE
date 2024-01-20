@@ -1,6 +1,15 @@
 import { Box, Checkbox, FormControlLabel, Typography } from "@mui/material";
 import AddressForm from "./AddressForm";
 
+const Shipping = ({
+  values,
+  touched,
+  errors,
+  handleChange,
+  handleBlur,
+  setFieldValue,
+}) => {
+
  {/* SHIPPING FORM */}
       {!values.shippingAddress.isSameAddress && (
         <Box>
@@ -51,5 +60,9 @@ import AddressForm from "./AddressForm";
           label="Same for Shipping Address"
         />
       </Box>
-        
+
+                </Box>
+  );
+};
+
         export default Shipping;
