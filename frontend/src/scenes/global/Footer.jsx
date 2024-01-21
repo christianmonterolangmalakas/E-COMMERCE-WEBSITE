@@ -7,7 +7,7 @@ function Footer() {
     palette: { neutral },
   } = useTheme();
   return (
-    <Box marginTop="70px" padding="40px 0" backgroundColor="blue">
+    <Box marginTop="70px" padding="40px 0" backgroundColor="gray">
       <Box
         width="80%"
         margin="auto"
@@ -18,12 +18,7 @@ function Footer() {
         columnGap="clamp(20px, 30px, 40px)"
       >
         <Box width="clamp(20%, 30%, 40%)">
-          <Typography
-            variant="h4"
-            fontWeight="bold"
-            mb="30px"
-            color={shades.primary[200]}
-          >
+          <Typography variant="h4" fontWeight="bold" mb="30px" color={"white"}>
             ForSumShop
           </Typography>
           <div style={{ color: "white" }}>
@@ -42,9 +37,10 @@ function Footer() {
             Contact Us
           </Typography>
           <Typography color={"white"} mb="30px">
-            Address: Dem charles bule: Jeffree Lingal: Albert Retiza: 62.E
-            Castillo laon laan May Pajo Caloocan City Christian Montero: blk 3
-            lot 5 rosa-rosario homes san pedro laguna
+            Address: Dem charles bule: 27d st andrew remerville subdivision
+            baesa qc Jeffree Lingal: 356 P. Casal st Quiapo manila Albert
+            Retiza: 62.E Castillo laon laan May Pajo Caloocan City Christian
+            Montero: blk 3 lot 5 rosa-rosario homes san pedro laguna
           </Typography>
           <Typography color={"white"} mb="30px" sx={{ wordWrap: "break-word" }}>
             Email: DemCharles@gmail.com, JeffreeLingal@gmail.com,
