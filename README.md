@@ -14,7 +14,7 @@ TO RUN THE CODE:
 
 1. Open Visual Studio Code
 2. Select folder then locate the project folder
-3. open two terminals, one is for client folder (front-end), second is for server folder (back-end)
+3. open two terminals, one is for frontend folder, second is for backend folder
 4. first, "cd frontend", then run command "npm install" then after that, "npm run start"
 5. second, "cd backend", then run command "npm install" then after that, "npm run develop"
 6. open "localhost:3000" if the terminal is not automatically open the browser. in our case the browser is automatically open.
